@@ -5,6 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './uncommon-page.component.html',
   styleUrls: ['./uncommon-page.component.css']
 })
+
 export class UncommonPageComponent {
+
+
 
 }
