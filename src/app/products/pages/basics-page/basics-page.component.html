@@ -15,18 +15,23 @@
     <p-card header="uppercase">
       {{nameLower | uppercase}}
     </p-card>
+
   </div>
 
   <div class="col-12 md:col-4">
+
     <p-card header="lowercase">
       {{nameUpper | lowercase}}
     </p-card>
+
   </div>
 
   <div class="col-12 md:col-4">
+
     <p-card header="titlecase">
       {{fullName | titlecase}}
     </p-card>
+    
   </div>
 
   <div class="col-12 md:col-6">
@@ -46,6 +51,8 @@
       <ol>
         <li>fecha | date:'long':'GMT-6'</li>
         <li>fecha | date:'long':'GMT-4'</li>
+        <li>fecha | date:'long':'':'es'</li>
+        <li>fecha | date:'long':'':'fr-CA'</li>
       </ol>
 
     </p-card>
@@ -68,6 +75,8 @@
       <ol>
         <li>{{customeDate | date:'long':'GMT-6'}}</li>
         <li>{{customeDate | date:'long':'GMT-4'}}</li>
+        <li>{{customeDate | date:'long':'':'es'}}</li>
+        <li>{{customeDate | date:'long':'':'fr-CA'}}</li>
       </ol>
 
     </p-card>
