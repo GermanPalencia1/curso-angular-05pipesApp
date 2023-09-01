@@ -11,13 +11,22 @@
 <div class="grid">
 
   <div class="col-12 md:col-6">
-    <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
+    <p-fieldset legend="i18n Select Pipe" [toggleable]="true">
+
+      <p>
+        Hola {{name}}, es un placer {{gender | i18nSelect:invitationMap}} a nuestro evento.
+      </p>
+
+      <p-button
+        (click) = "changeClient()"
+        label="Cambiar persona"
+      ></p-button>
 
     </p-fieldset>
   </div>
 
   <div class="col-12 md:col-6">
-    <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
+    <p-fieldset legend="i18n Plural Pipe" [toggleable]="true">
 
     </p-fieldset>
   </div>
