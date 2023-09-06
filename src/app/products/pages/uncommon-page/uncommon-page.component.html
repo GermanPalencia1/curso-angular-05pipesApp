@@ -61,11 +61,20 @@
   <div class="col-12 md:col-6">
     <p-fieldset legend="JSON Pipe" [toggleable]="true">
 
+      <pre>{{person | json}}</pre>
+
     </p-fieldset>
   </div>
 
   <div class="col-12 md:col-6">
     <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
+
+      <ul>
+        <!-- Transforma un objeto en algo iterable como un array -->
+        <li *ngFor="let item of person | keyvalue">
+          <b>{{item.key | titlecase}}:</b> {{item.value}}
+        </li>
+      </ul>
 
     </p-fieldset>
   </div>
