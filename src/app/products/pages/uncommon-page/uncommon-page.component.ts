@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable, interval, tap } from 'rxjs';
 
 @Component({
   selector: 'app-uncommon-page',
@@ -41,5 +42,18 @@ export class UncommonPageComponent {
     age: 28,
     address: 'Madrid'
   }
+
+  //Async Pipe
+  public myObservableTimer: Observable<number> = interval(1000).pipe(
+    tap((value) => console.log('tap:', value)),
+  );
+
+  //La promesa siempre se dispara aunque no estés en la página, no como el observable anterior
+  public promiseValue: Promise<string> = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('Tenemos datos en la promesa.');
+      console.log('Tenemos datos en la promesa.')
+    }, 3500);
+  })
 
 }
