@@ -8,13 +8,18 @@ import { ProductsRoutingModule } from './products-routing.module';
 import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.component';
 import { OrderComponent } from './pages/order/order.component';
 
+import { ToggleCasePipe } from './pipes/toggle-case.pipe';
+
 
 @NgModule({
   declarations: [
     BasicsPageComponent,
     NumbersPageComponent,
     UncommonPageComponent,
-    OrderComponent
+    OrderComponent,
+
+    //Pipes
+    ToggleCasePipe,
   ],
   imports: [
     CommonModule,
