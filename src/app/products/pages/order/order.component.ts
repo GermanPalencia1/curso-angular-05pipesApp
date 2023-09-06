@@ -43,6 +43,4 @@ export class OrderComponent {
     this.isUpperCase= !this.isUpperCase;
   }
 
-
-
 }
