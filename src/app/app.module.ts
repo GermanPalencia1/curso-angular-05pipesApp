@@ -31,4 +31,5 @@ registerLocaleData(localeFrCA);
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
