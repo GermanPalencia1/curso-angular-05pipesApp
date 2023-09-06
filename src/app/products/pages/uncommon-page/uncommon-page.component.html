@@ -42,6 +42,19 @@
   <div class="col-12 md:col-6">
     <p-fieldset legend="Slice Pipe" [toggleable]="true">
 
+      <b>Original</b>
+      <pre>{{clients}}</pre>
+
+      <!-- Empieza en la posición 0 y coge hasta antes de la 2 = 0 y 1 -->
+      <b>Slice:0:2</b>
+      <pre>{{clients | slice:0:2}}</pre>
+
+      <!-- Empieza en la posición 1 y coge hasta antes de la 2 = solo el 1 -->
+      <b>Slice:1:2</b>
+      <pre>{{clients | slice:1:2}}</pre>
+
+      <!-- Con valores negativos empieza a quitar por detrás -->
+
     </p-fieldset>
   </div>
 
